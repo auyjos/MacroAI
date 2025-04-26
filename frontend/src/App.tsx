@@ -1,30 +1,19 @@
 import { useState } from 'react'
+import FloatingShape from './components/FloatingShape'
 
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  
-  const increment = () => {
-    setCount((prevCount) =>  prevCount +1 )
-  }
-
-
-  const decrement = () => {
-    setCount((prevCount) =>  prevCount -1  )
-  }
 
 
   return (
-    <>
+    
+<div className= 
+'min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-950 flex items-center justify-center relative'>
+    <FloatingShape />
 
-<button onClick={decrement}>- </button>
-    <h1 className="text-3xl font-bold underline">{count}</h1>
-     <button onClick={increment}> + </button>
 
+     </div>
 
-    </>
   )
 }
 
